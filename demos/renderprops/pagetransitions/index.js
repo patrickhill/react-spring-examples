@@ -18,7 +18,7 @@ export default class App extends React.PureComponent {
   state = { index: 0 }
   toggle = e =>
     this.setState(state => ({
-      index: state.index === 2 ? 0 : state.index + 1,
+      index: state.index === pages.length - 1 ? 0 : state.index + 1,
     }))
   render() {
     return (
